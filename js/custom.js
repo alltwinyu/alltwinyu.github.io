@@ -59,6 +59,5 @@ function clickcolor(event) {
     badgeElement.style.setProperty("--hover-color", "red");
   } else {
     badgeElement.style.setProperty("--bg-color", "red");
-    badgeElement.style.setProperty("--hover-color", "black");
   }
 }
