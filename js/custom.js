@@ -50,14 +50,15 @@
 })(window.jQuery);
 
 function clickcolor(event) {
-  var divElement = event.currentTarget; // Get the div element
-
-  var computedStyle = window.getComputedStyle(divElement);
+  var badgeElement = event.currentTarget;
+  var computedStyle = window.getComputedStyle(badgeElement);
   var currentColor = computedStyle.getPropertyValue("--bg-color").trim();
 
   if (currentColor === "red") {
-    divElement.style.setProperty("--bg-color", "black");
+    badgeElement.style.setProperty("--bg-color", "black");
+    badgeElement.style.setProperty("--hover-color", "red");
   } else {
-    divElement.style.setProperty("--bg-color", "red");
+    badgeElement.style.setProperty("--bg-color", "red");
+    badgeElement.style.setProperty("--hover-color", "black");
   }
 }
