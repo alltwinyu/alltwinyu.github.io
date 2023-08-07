@@ -20,6 +20,7 @@ https://templatemo.com/tm-584-pod-talk
   --p-color: #717275;
   --border-color: #7fffd4;
   --link-hover-color: #0066cc;
+  --bg-color: #000000;
 
   --body-font-family: "Montserrat", sans-serif;
   --title-font-family: "Sono", sans-serif;
@@ -730,7 +731,7 @@ main {
 }
 
 .custom-block .custom-block-info + div .badge {
-  background-color: var(--dark-color);
+  background-color: var(--bg-color);
   color: var(--white-color);
   border-radius: 50px !important;
   font-size: var(--menu-font-size);
@@ -745,7 +746,7 @@ main {
 }
 
 .custom-block .custom-block-info + div .badge:hover {
-  background-color: var(--secondary-color);
+  background-color: red;
 }
 
 .custom-block-full {
